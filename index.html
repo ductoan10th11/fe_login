@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> --> <!--bootstrap-->
+    <link rel="stylesheet" href="./style.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-bold-straight/css/uicons-bold-straight.css'>
+</head>
+<body>
+    <div class="container">
+        <div class="container__centre">
+            <div class="container__centre__header">
+                <h1>From CNTT K22H With love</h1>
+            </div>
+            <div class="container__centre__body">
+                <img src="./logo10.png">
+                <div class="container__centre__body--label">
+                    <h4>Để xem Thời khóa biểu. Vui lòng nhập Tài khoản và Mật khẩu của bạn trên</h4>
+                    <a href="#">DangKyTinChi ICTU...</a>
+                </div>
+                <div class="container__centre__body--input">
+                    <div class="container__centre__body--input--user">
+                        <i class="fi fi-ss-user"></i>
+                        <input type="text" required> 
+                        <label onmousedown="return false" onselectstart="return false">Tài khoản</label>
+                    </div>
+                    <div class="container__centre__body--input--pw">
+                        <i class="fi fi-sr-lock"></i>
+                        <input id="password" type="password" required>
+                        <label onmousedown="return false" onselectstart="return false">Mật khẩu</label>
+                        <i class="fi fi-br-eye-crossed eye_pw hide_pw" id="hide_show_pw"></i>
+                        <i class="fi fi-bs-eye eye_pw show-pw" id="hide_show_pw"></i>
+                    </div>
+                </div>
+                <button>Đăng nhập</button>
+            </div>
+            <div class="container__centre__footer">
+                <h5>© 2023 by <a href="#">KIENIT.VN</a> All Rights Reserved.</h5>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var passwordField = document.getElementById('password');
+        var toggleIcon = document.getElementById('hide_show_pw');
+
+        toggleIcon.addEventListener('click', function() {
+            passwordField.type = passwordField.type === 'password' ? 'text' : 'password';
+            toggleIcon.className = passwordField.type === 'password' ? 'fi fi-br-eye-crossed' : 'fi fi-bs-eye';
+        });
+    </script>
+</body>
+</html>
